@@ -1,6 +1,6 @@
 const axios = require('axios');
 const baseUrl = require('../utils/common.js');
-const generateCardPurchaseData = require('../models/cardCreationModel.js');
+const generateCardPurchaseData = require('../models/cardPurchaseModel.js');
 
 async function createDebitModeTransaction(webhookId, externalRef) {
     const payload = generateCardPurchaseData();
