@@ -8,8 +8,13 @@ https://www.docker.com/products/docker-desktop/
 
 Run following commands:
 
-docker pull ghcr.io/tarampampam/webhook-tester:issue-308
-docker run --rm -p 8080:8080/tcp tarampampam/webhook-tester serve
+```bash
+  docker pull ghcr.io/tarampampam/webhook-tester:issue-308
+```
+
+```bash
+  docker run --rm -p 8080:8080/tcp tarampampam/webhook-tester serve
+```
 
 Visit http://127.0.0.1:8080/ and you should see the webhook tester service running.
 
