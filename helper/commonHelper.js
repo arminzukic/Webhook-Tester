@@ -5,7 +5,7 @@ const getContentByExternalReferenceHeader = (webhookEvents,  customHeaderValue) 
 const parseBase64ToObject = (base64Content) => {
   try {
       // Decode the base64 string to a regular string
-      const decodedString = atob(base64Content);
+      const decodedString = Buffer.from(base64Content, 'base64').toString('utf8');
   
       // Parse the decoded string into a JavaScript object
       const jsonObject = JSON.parse(decodedString);
